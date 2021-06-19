@@ -1,0 +1,50 @@
+{
+  "name": "webpack-tailwindcss",
+  "version": "1.0.0",
+  "description": "Starter Webpack with Tailwind CSS",
+  "private": true,
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=production",
+    "lint": "eslint --fix --ignore-path .gitignore .",
+    "prepare": "husky install",
+    "test": "npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "autoprefixer": "^10.2.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "beautify-html-webpack-plugin": "^1.0.3",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "2.3.1",
+    "prettier-eslint": "^12.0.0",
+    "tailwindcss": "^2.2.2",
+    "terser-webpack-plugin": "^5.1.3",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
